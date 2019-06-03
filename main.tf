@@ -256,7 +256,7 @@ resource "aws_codepipeline" "source_build_deploy" {
       }
     }
   }
-
+/*
   stage {
     name = "Deploy"
 
@@ -273,7 +273,7 @@ resource "aws_codepipeline" "source_build_deploy" {
         ServiceName = "${var.service_name}"
       }
     }
-  }
+  }*/
 }
 
 resource "random_string" "webhook_secret" {
